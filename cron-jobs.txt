@@ -1,0 +1,9 @@
+# Cron jobs for Mautic 2
+#* * * * * php /var/www/html/app/console mautic:segments:update
+#* * * * * php /var/www/html/app/console mautic:campaigns:update
+#* * * * * php /var/www/html/app/console mautic:campaigns:trigger
+#
+# Cron jobs for Mautic 3
+* * * * * php /var/www/html/bin/console mautic:segments:update
+* * * * * php /var/www/html/bin/console mautic:campaigns:update
+* * * * * php /var/www/html/bin/console mautic:campaigns:trigger
